@@ -1,7 +1,5 @@
 var ChannelList = ["SjpdtPM9zDI", "46cXFUzR9XM", "QtMzV73NAgk", "oYxtLNJJ54Y", "dIpaY_1aoUw", "Xithigfg7dA", "_AXx2XSI4Kw", "3olM-9vcd4M", "fKzVK1Di3Dw", "LXb3EKWsInQ"];
 var i = 0;
-var Width = '640';
-var Height = '390';
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -9,8 +7,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     player = new window['YT'].Player('player', {
-        height: Height,
-        width: Width,
+        height: '390',
+        width: '640',
         videoId: "" + ChannelList[0],
         playerVars: { 'controls': 0 },
         events: {
@@ -28,10 +26,6 @@ var TVDeatails = /** @class */ (function () {
         this.Power = TVSpecs.powerinWatts;
         this.LaunchDate = TVSpecs.launchDate;
     }
-    TVDeatails.prototype.setWidth = function (width, height) {
-        Width = width;
-        Height = height;
-    };
     return TVDeatails;
 }());
 var NOKIA = new TVDeatails({ modal: "55CAUHDN", size: 55, screenType: "LED", refreshRate: 60, powerinWatts: 105, launchDate: "December, 2019" });
@@ -122,7 +116,6 @@ var Power = document.getElementById("Power");
 var Launchdate = document.getElementById("Launchdate");
 selectedTV.addEventListener("change", function () {
     if (selectedTV.value === "NOKIA") {
-        NOKIA.setWidth('860', '400');
         player.loadVideoById('y0xRRniQaKo');
         player.playVideo();
         Modal.innerText = "Modal : " + NOKIA.Modal;
@@ -149,8 +142,8 @@ selectedTV.addEventListener("change", function () {
         Size.innerText = "Size : " + Samsung.Size + "inch";
         Scren.innerText = "Screen Type : " + Samsung.ScreenType;
         RefreshRate.innerText = "Refresh Rate : " + Samsung.RefreshRate + "Hz";
-        Power.innerText = "Modal : " + Samsung.Power + "W";
-        Launchdate.innerText = "Modal : " + Samsung.LaunchDate;
+        Power.innerText = "Power Consumption : " + Samsung.Power + "W";
+        Launchdate.innerText = "Launch Date : " + Samsung.LaunchDate;
     }
     else {
         player.loadVideoById(ChannelList[0]);

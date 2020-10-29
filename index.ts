@@ -189,8 +189,8 @@ selectedTV.addEventListener("change",()=>{
         Size.innerText = `Size : ${Samsung.Size}inch`
         Scren.innerText = `Screen Type : ${Samsung.ScreenType}`
         RefreshRate.innerText = `Refresh Rate : ${Samsung.RefreshRate}Hz`
-        Power.innerText = `Modal : ${Samsung.Power}W`
-        Launchdate.innerText = `Modal : ${Samsung.LaunchDate}`   
+        Power.innerText = `Power Consumption : ${Samsung.Power}W`
+        Launchdate.innerText = `Launch Date : ${Samsung.LaunchDate}`   
     }else{
         player.loadVideoById(ChannelList[0]);
         player.playVideo();
