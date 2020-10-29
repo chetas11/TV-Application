@@ -57,3 +57,9 @@ p {
   border: 20px solid #495464;
   width: 650px;
 }
+
+@media screen and (max-width: 400px) {
+  p {
+    display: inline;
+  }
+}
