@@ -58,12 +58,12 @@ p {
   width: 650px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   p {
     display: inline;
   }
 
   #remote-img {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
