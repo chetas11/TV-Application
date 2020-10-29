@@ -1,7 +1,5 @@
-let ChannelList = ["SjpdtPM9zDI", "46cXFUzR9XM", "QtMzV73NAgk", "oYxtLNJJ54Y", "dIpaY_1aoUw","Xithigfg7dA","_AXx2XSI4Kw"];
+let ChannelList = ["SjpdtPM9zDI", "46cXFUzR9XM", "QtMzV73NAgk", "oYxtLNJJ54Y", "dIpaY_1aoUw","Xithigfg7dA","_AXx2XSI4Kw","3olM-9vcd4M","fKzVK1Di3Dw","LXb3EKWsInQ"];
 let i = 0;
-
-
 
 let tag  = document.createElement('script')
 tag.src = "https://www.youtube.com/iframe_api";
