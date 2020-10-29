@@ -62,4 +62,8 @@ p {
   p {
     display: inline;
   }
+
+  #remote-img {
+    margin-top: 20px;
+  }
 }
