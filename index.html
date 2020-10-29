@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <title>TV</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 text-center mt-5">
+                <h1><img class="img-fluid title-img" src="./images/Android-TV-icon.png" alt="Android-TV-icon"> TV Application</h1>
+                <select class="form-control" name="TV" id="TV">
+                    <option selected value="Default">Default</option>
+                    <option value="NOKIA">NOKIA</option>
+                    <option value="Sony">Sony</option>
+                    <option value="Samsung">Samsung</option>
+                </select>
+                <div id="player"></div>
+                <div id="volume"></div>
+                <div class="Details">
+                    <p class="text-info" id="Modal"></p>
+                    <p class="text-info" id="Size"></p>
+                    <p class="text-info" id="Screen"></p>
+                    <p class="text-info" id="RefreshRate"></p>
+                    <p class="text-info" id="Power"></p>
+                    <p class="text-info" id="Launchdate"></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 text-center mt-5">
+                <img class="img-fluid" src="./images/remote.jpg" usemap="#image-map">
+    
+                <map name="image-map">
+                    <area id="left" title="Left" coords="11,89,38,122" shape="rect">
+                    <area id="right" title="Right" coords="91,90,119,123" shape="rect">
+                    <area id="top" title="Top" coords="48,51,82,79" shape="rect">
+                    <area id="down" title="Down" coords="47,132,82,160" shape="rect">
+                    <area id="play-pause" title="Play/Pause" coords="65,106,24" shape="circle">
+                    <area id="mute" title="Mute" coords="98,199,23" shape="circle">
+                </map>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

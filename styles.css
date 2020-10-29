@@ -1,0 +1,59 @@
+body {
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+}
+
+img {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+select {
+  margin: 20px 0px;
+}
+
+img {
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: "Prompt", sans-serif;
+}
+
+iframe {
+  width: 100%;
+}
+
+p {
+  margin: 0%;
+  font-family: "Prompt", sans-serif;
+  font-weight: bolder;
+}
+
+#volume {
+  font-size: 1.5rem;
+  font-family: "Prompt", sans-serif;
+}
+
+.title-img {
+  width: 50px;
+  margin-top: 0px;
+}
+
+.Nokia {
+  border: 5px solid #393e46;
+  width: 700px;
+}
+
+.Samsung {
+  border: 15px solid #834c69;
+  width: 800px;
+}
+
+.Sony {
+  border: 20px solid #495464;
+  width: 650px;
+}
