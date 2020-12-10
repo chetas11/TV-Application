@@ -21,4 +21,4 @@
 - https://developers.google.com/youtube/iframe_api_reference
 - https://www.w3schools.com/tags/tag_iframe.ASP
 
-![Image 1](https://github.com/chetas11/Zomato_Clone/blob/master/images/ZomatoAPP_Screenshot.png)
+![Image 1](https://github.com/chetas11/TV-Application/blob/master/images/TV_Application.png)
